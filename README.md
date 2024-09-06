@@ -2,8 +2,6 @@
 
 # 42_Yerevan
 
--t dd/mm/yy fileName
-
 [lrwxr-xr-x  1 aramarak  2024_yerevan   5 Sep  2 22:51 test6 -> test0](https://cdn.intra.42.fr/pdf/pdf/128197/en.subject.pdf)
 
 ### cd
