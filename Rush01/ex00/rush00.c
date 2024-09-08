@@ -6,7 +6,7 @@
 /*   By: ggevorgi <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/07 12:40:19 by ggevorgi          #+#    #+#             */
-/*   Updated: 2024/09/08 17:13:47 by ggevorgi         ###   ########.fr       */
+/*   Updated: 2024/09/08 17:13:34 by ggevorgi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,15 +47,15 @@ void	rush(int x, int y)
 		{
 			if (row == 1)
 			{
-				ft_print_lane('/', '*', '\\', x);
+				ft_print_lane('o', '-', 'o', x);
 			}
 			else if (row < y)
 			{
-				ft_print_lane('*', ' ', '*', x);
+				ft_print_lane('|', ' ', '|', x);
 			}
 			else
 			{
-				ft_print_lane('\\', '*', '/', x);
+				ft_print_lane('o', '-', 'o', x);
 			}
 			row++;
 		}
