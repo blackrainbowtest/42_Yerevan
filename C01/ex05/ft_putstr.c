@@ -6,11 +6,12 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 20:37:31 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/09 20:50:32 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/10 17:19:35 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <unistd.h>
+#include <unistd.h>
+
 void	ft_putstr(char *str)
 {
 	int		i;

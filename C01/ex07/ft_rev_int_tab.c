@@ -6,7 +6,7 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/09 21:03:16 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/09 21:20:11 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/10 17:19:19 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ void	ft_rev_int_tab(int *tab, int size)
 		temp = tab[i];
 		tab[i] = tab[size - 1 - i];
 		tab[size - 1 - i] = temp;
-		printf("%d, %d\n", i, size - 1 - i);
 		i++;
 	}
 }
