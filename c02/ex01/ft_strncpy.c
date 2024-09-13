@@ -6,32 +6,26 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 20:46:53 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/10 21:38:45 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/13 17:31:03 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	char	*start;
-	int		i;
+	unsigned int	i;
 
 	i = 0;
-	start = dest;
+	while (src [i] != '\0' && i < n)
+	{
+		dest[i] = src[i];
+		i++;
+	}
 	while (i < n)
 	{
-		if (*src != '\0')
-		{
-			*dest = *src;
-			++src;
-		}
-		else
-		{
-			*dest = '\0';
-		}
-		++dest;
-		++i;
+		dest[i] = '\0';
+		i++;
 	}
-	return (start);
+	return (dest);
 }
 /*
 int	main(void)
