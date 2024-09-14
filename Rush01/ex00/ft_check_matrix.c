@@ -6,7 +6,7 @@
 #    By: aramarak <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/14 21:35:55 by aramarak          #+#    #+#              #
-#    Updated: 2024/09/14 22:04:01 by aramarak         ###   ########.fr        #
+/*   Updated: 2024/09/14 22:30:21 by aramarak         ###   ########.fr       */
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,10 +25,10 @@ int	ft_check_matrix(int **arr, int **matrix, int rows, int cols)
 	{
 		while (curr_col < cols)
 		{
-			if (matrix[curr_row][curr_col])
+			if (!matrix[curr_row][curr_col])
 			{
-				ft_column_check(arr, matrix, curr_row, curr_col);
-				ft_row_check(arr, matrix, curr_row, curr_col);
+				ft_column_check(arr, matrix, curr_col);
+				ft_row_check(arr, matrix, curr_row);
 			}
 			curr_column++;
 		}

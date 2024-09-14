@@ -6,7 +6,7 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 15:50:46 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/14 21:30:51 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/14 22:26:31 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,10 @@ int	main(int argc, char **argv)
 		ft_fill_matrix(d, rows, cols, argv[1]);
 		ft_syntax(d, rows, cols);
 		ft_free_matrix(d, rows);
+	}
+	else
+	{
+		write(2, "Error", 5);
 	}
 	write(1, "\n", 1);
 	return (0x3);
