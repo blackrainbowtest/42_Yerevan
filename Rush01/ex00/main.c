@@ -6,7 +6,7 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 15:50:46 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/14 19:02:25 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/14 21:30:51 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ int		**ft_create_matrix(int rows, int cols);
 void	ft_free_matrix(int **d, int rows);
 void	ft_fill_matrix(int **arr, int rows, int cols, char *str);
 void	ft_print_matrix(int **arr, int rows, int cols);
+void	ft_syntax(int **arr, int rows, int cols);
 
 int	main(int argc, char **argv)
 {
@@ -33,7 +34,7 @@ int	main(int argc, char **argv)
 		if (!d)
 			return (0x1);
 		ft_fill_matrix(d, rows, cols, argv[1]);
-		ft_print_matrix(d, rows, cols);
+		ft_syntax(d, rows, cols);
 		ft_free_matrix(d, rows);
 	}
 	write(1, "\n", 1);

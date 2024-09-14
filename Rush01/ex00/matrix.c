@@ -6,7 +6,7 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/14 17:30:56 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/14 18:52:50 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/14 21:38:09 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int	**ft_create_matrix(int rows, int cols)
 	d = (int **)malloc(rows * sizeof(int *));
 	if (!d)
 	{
-		write(2, "Not enough memory! 0x1\n", 25);
+		write(2, "Error", 5);
 		return (NULL);
 	}
 	while (nb < rows)
@@ -31,7 +31,7 @@ int	**ft_create_matrix(int rows, int cols)
 		d[nb] = (int *)malloc(cols * sizeof(int));
 		if (!d[nb])
 		{
-			write(2, "Not enough memory! 0x2\n", 25);
+			write(2, "Error", 5);
 			while (nb-- > 0)
 				free(d[nb]);
 			free(d);
