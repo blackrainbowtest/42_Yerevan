@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
 
@@ -24,7 +23,7 @@ int	**ft_create_matrix(int rows, int cols)
 	if (!d)
 	{
 		write(2, "Error", 5);
-		return (NULL);
+		return (0);
 	}
 	while (nb < rows)
 	{
@@ -35,7 +34,7 @@ int	**ft_create_matrix(int rows, int cols)
 			while (nb-- > 0)
 				free(d[nb]);
 			free(d);
-			return (NULL);
+			return (0);
 		}
 		nb++;
 	}
@@ -55,7 +54,7 @@ void	ft_free_matrix(int **d, int rows)
 	free(d);
 }
 
-void	ft_fill_matrix(int **arr, int rows, int cols, char *str)
+void	ft_fill_matrix(int **arr, int cols, char *str)
 {
 	int		i;
 	int		j;

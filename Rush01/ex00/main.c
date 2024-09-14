@@ -16,9 +16,9 @@
 
 int		**ft_create_matrix(int rows, int cols);
 void	ft_free_matrix(int **d, int rows);
-void	ft_fill_matrix(int **arr, int rows, int cols, char *str);
+void	ft_fill_matrix(int **arr, int cols, char *str);
 void	ft_print_matrix(int **arr, int rows, int cols);
-void	ft_syntax(int **arr, int rows, int cols);
+int		ft_syntax(int **arr, int rows, int cols);
 
 int	main(int argc, char **argv)
 {
@@ -33,7 +33,7 @@ int	main(int argc, char **argv)
 		d = ft_create_matrix(rows, cols);
 		if (!d)
 			return (0x1);
-		ft_fill_matrix(d, rows, cols, argv[1]);
+		ft_fill_matrix(d, cols, argv[1]);
 		ft_syntax(d, rows, cols);
 		ft_free_matrix(d, rows);
 	}
