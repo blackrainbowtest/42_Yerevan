@@ -9,10 +9,12 @@
 /*   Updated: 2024/09/14 22:27:39 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+#include <stdio.h>
+#include <unistd.h>
 int		**ft_create_matrix(int rows, int cols);
 int		ft_check_matrix(int **arr, int **matrix, int rows, int cols);
 void	ft_free_matrix(int **d, int rows);
+void	ft_print_matrix(int **arr, int rows, int cols);
 
 int	ft_syntax(int **arr, int rows, int cols)
 {
@@ -28,6 +30,7 @@ int	ft_syntax(int **arr, int rows, int cols)
 	/*
 	 *
 	 */
+	ft_print_matrix(matrix, rows, cols);
 	ft_free_matrix(matrix, rows);
 }
 

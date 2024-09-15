@@ -13,6 +13,23 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+int	*ft_create_array(int cols)
+{
+	int		*d;
+	int		i;
+
+	i = 0;
+	d = (int *)malloc(cols * sizeof(int));
+	if (!d)
+	{
+		write(2, "Error", 5);
+		return (0);
+	}
+	while(i < cols)
+		d[i++] = 0;
+	return (d);
+}
+
 int	**ft_create_matrix(int rows, int cols)
 {
 	int		**d;
@@ -67,7 +84,7 @@ void	ft_fill_matrix(int **arr, int cols, char *str)
 			str++;
 		if (*str >= '0' && *str <= '4')
 		{
-			arr[i][j] = *str;
+			arr[i][j] = *str - '0';
 			j++;
 			if (j == cols)
 			{
@@ -87,6 +104,7 @@ void	ft_print_matrix(int **arr, int rows, int cols)
 {
 	int		i;
 	int		j;
+	char	c;
 
 	i = 0;
 	j = 0;
@@ -94,7 +112,8 @@ void	ft_print_matrix(int **arr, int rows, int cols)
 	{
 		while (j < cols)
 		{
-			write(1, &arr[i][j], 1);
+			c = arr[i][j] + '0';
+			write(1, &c, 1);
 			write(1, " ", 1);
 			j++;
 		}

@@ -4,6 +4,7 @@
 
 extern int g_rows;
 extern int g_cols;
+extern int g_ch_size;
 
 void    ft_display_matrix(int **matrix)
 {
@@ -27,7 +28,7 @@ void    ft_display_matrix(int **matrix)
 	}
 }
 
-void ft_display_char_matrix(char ***matrix, int rows, int cols)
+void ft_display_char_matrix(char ***matrix)
 {
     int row;
     int col;
@@ -35,19 +36,22 @@ void ft_display_char_matrix(char ***matrix, int rows, int cols)
     char *current_str;
 
     row = 0;
-    while (row < rows)
+    while (row < g_rows)
     {
         col = 0;
-        while (col < cols)
+        while (col < g_cols)
         {
             current_str = matrix[row][col];
-            i = 0;
-            while (current_str[i] != '\0')
+            if (current_str != NULL)  // Проверяем, что указатель не NULL
             {
-                write(1, &current_str[i], 1);
-                i++;
+                i = 0;
+                while (current_str[i] != '\0')
+                {
+                    write(1, &current_str[i], 1);
+                    i++;
+                }
             }
-            if (col < cols - 1)
+            if (col < g_cols - 1)
                 write(1, " | ", 3);
 
             col++;

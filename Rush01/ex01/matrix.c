@@ -56,7 +56,7 @@ void	ft_fill_matrix(int **arr, char *str)
 	j = 0;
 	while (*str)
 	{
-		if (*str >= '0' && *str <= (g_rows + '0'))
+		if (*str >= '0' && *str <= '9')
 		{
 			arr[i][j] = *str - '0';
 			j++;
