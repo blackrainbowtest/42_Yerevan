@@ -6,6 +6,8 @@ int g_rows;
 int g_cols;
 int g_ch_size;
 int g_debug;
+int		**arr;
+int     **matrix;
 
 int	    **ft_create_matrix(void);
 void	ft_fill_matrix(int **arr, char *str);
@@ -14,9 +16,6 @@ int     ft_core(int **arr, int **matrix);
 
 int	main(int argc, char **argv)
 {
-    int		**arr;
-    int     **matrix;
-
     g_rows = 4;
     g_cols = 4;
     g_ch_size = 21;
@@ -26,7 +25,6 @@ int	main(int argc, char **argv)
 		arr = ft_create_matrix();
         matrix = ft_create_matrix();
 		ft_fill_matrix(arr, argv[1]);
-        write(1, "\n", 1);
 		if (ft_core(arr, matrix))
             write(2, "Error", 5);
 		ft_free_matrix(arr);
