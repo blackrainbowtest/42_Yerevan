@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-extern char ***g_tempMatrix;
-extern int		g_rows;
-extern int		g_cols;
+extern char ***tempMatrix;
+extern int		rows;
+extern int		cols;
 void	ft_stradd(char *dest, const char *src);
 void	int_to_str(int num, char *str);
 
@@ -23,19 +23,19 @@ int	ft_add_number(int num, int row, int col, int **matrix)
 
 	i = 0;
 	matrix[row][col] = num;
-	while (i < g_cols)
+	while (i < cols)
 	{
 		int_to_str(num, str);
 		if (!matrix[i][col])
-			ft_stradd(g_tempMatrix[i][col], str);
+			ft_stradd(tempMatrix[i][col], str);
 		i++;
 	}
 	i = 0;
-	while (i < g_rows)
+	while (i < rows)
 	{
 		int_to_str(num, str);
 		if (!matrix[row][i])
-			ft_stradd(g_tempMatrix[row][i], str);
+			ft_stradd(tempMatrix[row][i], str);
 		i++;
 	}
 	return (0);

@@ -2,9 +2,9 @@
 
 #include <unistd.h>
 
-extern int g_rows;
-extern int g_cols;
-extern int g_ch_size;
+extern int rows;
+extern int cols;
+extern int ch_size;
 
 void    ft_display_matrix(int **matrix)
 {
@@ -13,10 +13,10 @@ void    ft_display_matrix(int **matrix)
 	char	c;
 
 	row = 0;
-	while (row < g_rows)
+	while (row < rows)
 	{
 	    col = 0;
-        while (col < g_cols)
+        while (col < cols)
 		{
 			c = matrix[row][col] + '0';
 			write(1, &c, 1);
@@ -36,10 +36,10 @@ void ft_display_char_matrix(char ***matrix)
     char *current_str;
 
     row = 0;
-    while (row < g_rows)
+    while (row < rows)
     {
         col = 0;
-        while (col < g_cols)
+        while (col < cols)
         {
             current_str = matrix[row][col];
             if (current_str != NULL)  // Проверяем, что указатель не NULL
@@ -51,7 +51,7 @@ void ft_display_char_matrix(char ***matrix)
                     i++;
                 }
             }
-            if (col < g_cols - 1)
+            if (col < cols - 1)
                 write(1, " | ", 3);
 
             col++;

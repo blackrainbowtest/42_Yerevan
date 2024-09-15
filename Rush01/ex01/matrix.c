@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-extern int g_rows;
-extern int g_cols;
+extern int rows;
+extern int cols;
 
 int	**ft_create_matrix(void)
 {
@@ -12,15 +12,15 @@ int	**ft_create_matrix(void)
 	int		nb;
 
 	nb = 0;
-	d = (int **)malloc(g_rows * sizeof(int *));
+	d = (int **)malloc(rows * sizeof(int *));
 	if (!d)
 	{
 		write(2, "Error", 5);
 		return (0);
 	}
-	while (nb < g_rows)
+	while (nb < rows)
 	{
-		d[nb] = (int *)malloc(g_cols * sizeof(int));
+		d[nb] = (int *)malloc(cols * sizeof(int));
 		if (!d[nb])
 		{
 			write(2, "Error", 5);
@@ -39,7 +39,7 @@ void	ft_free_matrix(int **arr)
 	int		i;
 
 	i = 0;
-	while (i < g_rows)
+	while (i < rows)
 	{
 		free(arr[i]);
 		i++;
@@ -60,7 +60,7 @@ void	ft_fill_matrix(int **arr, char *str)
 		{
 			arr[i][j] = *str - '0';
 			j++;
-			if (j == g_cols)
+			if (j == cols)
 			{
 				j = 0;
 				i++;

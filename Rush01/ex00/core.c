@@ -1,83 +1,70 @@
-/* ************************************************************************** */
-/*	                                                                        */
-/*	                                                    :::      ::::::::   */
-/*   core.c	                                         :+:      :+:    :+:   */
-/*	                                                +:+ +:+         +:+     */
-/*   By: aramarak <marvin@42.fr>	                +#+  +:+       +#+        */
-/*	                                            +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 19:58:46 by aramarak	      #+#    #+#             */
-/*   Updated: 2024/09/15 20:49:16 by aramarak         ###   ########.fr       */
-/*	                                                                        */
-/* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
-
-char	***g_tempMatrix;
 
 char	***ft_create_char_matrix(void);
 void	ft_free_char_matrix(char ***d);
 void	ft_display_matrix(int **matrix);
 void	ft_display_char_matrix(char ***matrix);
 void	ft_strcpy(char *dest, char *src);
-int	 ft_loop_matrix(int **arr, int **matrix, char ***g_tempMatrix);
-int	 *ft_cell_boundaries(int **arr, int row, int col);
-int	 ft_valid_cons(int *boundaries, int row, int col, char ***g_tempMatrix);
+int		ft_loop_matrix(int **arr, int **matrix, char ***tempMatrix);
+int		*ft_cell_boundaries(int **arr, int row, int col);
+int		ft_valid_cons(struct s_data *data);
 int		ft_check_matrix_full(int rows, int cols, int **matrix);
 
-int	ft_core(int **arr, int **matrix)
+int	ft_core(struct s_data *data)
 {
-	g_tempMatrix = ft_create_char_matrix();
-	if (!g_tempMatrix)
-	    write(2, "Error", 5);
-	if (ft_loop_matrix(arr, matrix, g_tempMatrix))
+	char	***tempMatrix;
+	tempMatrix = ft_create_char_matrix();
+	if (!tempMatrix)
 	{
-	    ft_free_char_matrix(g_tempMatrix);
+		write(2, "Error", 5);
+		return (1);
+	}
+	data->tempMatrix = tempMatrix;
+	if (ft_loop_matrix(&data))
+	{
+		ft_free_char_matrix(data->tempMatrix);
 			return (1);
 	}
 	if (1)
 	{
 			write(1, "\nArr\n", 5);
-			ft_display_matrix(arr);
+			ft_display_matrix(data->arr);
 			write(1, "\nChar Matric\n", 13);
-			ft_display_matrix(matrix);
+			ft_display_matrix(data->matrix);
 			write(1, "\nTemp Matric\n", 13);
-			ft_display_char_matrix(g_tempMatrix);
+			ft_display_char_matrix(data->tempMatrix);
 	}
-	ft_free_char_matrix(g_tempMatrix);
+	ft_free_char_matrix(data->tempMatrix);
 	return (0);
 }
-/*
-* Loop out matrix
-*/
-int ft_loop_matrix(int **arr, int **matrix, char ***g_tempMatrix)
+
+int ft_loop_matrix(struct s_data *data)
 {
-	int     row;
-	int     col;
-	int     *boundaries;
-	int     is_changed;
+	int	 	is_changed;
 
 	is_changed = 1;
 	while (is_changed)
 	{
-	    is_changed = 0;
-	    row = 0;
-	    while (row < 4)
-	    {
-	        col = 0;
-	        while (col < 4)
-	        {
-				boundaries = ft_cell_boundaries(arr, row, col);
-				ft_valid_cons(boundaries, row, col, g_tempMatrix);
+		is_changed = 0;
+		data->coords[0] = 0;
+		while (coords[0] < 4)
+		{
+			data->coords[1] = 0;
+			while (data->coords[1] < 4)
+			{
+				data->boundaries = = ft_cell_boundaries(data->arr, data->coords[0], data->coords[1]);
+				ft_valid_cons(struct s_data *data);
 								
-	            if (ft_check_matrix_full(4, 4, matrix))
-	            	is_changed = 0;
-	            free(boundaries);
-	            col++;
-	        }
-	        row++;
-	    }
+				if (ft_check_matrix_full(4, 4, data->matrix))
+					is_changed = 0;
+				free(data->boundaries);
+				data->coords[1]++;
+			}
+			data->coords[0]++;
+		}
 	}
 	return (0);
 }

@@ -2,10 +2,10 @@
 
 #include <unistd.h>
 
-int g_rows;
-int g_cols;
-int g_ch_size;
-int g_debug;
+int rows;
+int cols;
+int ch_size;
+int debug;
 int		**arr;
 int     **matrix;
 
@@ -16,10 +16,10 @@ int     ft_core(int **arr, int **matrix);
 
 int	main(int argc, char **argv)
 {
-    g_rows = 4;
-    g_cols = 4;
-    g_ch_size = 21;
-    g_debug = 1;
+    rows = 4;
+    cols = 4;
+    ch_size = 21;
+    debug = 1;
     if (argc == 2)
 	{
 		arr = ft_create_matrix();

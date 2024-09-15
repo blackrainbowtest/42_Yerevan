@@ -1,22 +1,5 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   matrix.c                                           :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 20:00:24 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/15 20:00:26 by aramarak         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
-// matrix.c ex01
-
 #include <stdlib.h>
 #include <unistd.h>
-
-extern int g_rows;
-extern int g_cols;
 
 int	**ft_create_matrix(void)
 {
@@ -24,15 +7,15 @@ int	**ft_create_matrix(void)
 	int		nb;
 
 	nb = 0;
-	d = (int **)malloc(g_rows * sizeof(int *));
+	d = (int **)malloc(4 * sizeof(int *));
 	if (!d)
 	{
 		write(2, "Error", 5);
 		return (0);
 	}
-	while (nb < g_rows)
+	while (nb < 4)
 	{
-		d[nb] = (int *)malloc(g_cols * sizeof(int));
+		d[nb] = (int *)malloc(4 * sizeof(int));
 		if (!d[nb])
 		{
 			write(2, "Error", 5);
@@ -51,7 +34,7 @@ void	ft_free_matrix(int **arr)
 	int		i;
 
 	i = 0;
-	while (i < g_rows)
+	while (i < 4)
 	{
 		free(arr[i]);
 		i++;
@@ -72,7 +55,7 @@ void	ft_fill_matrix(int **arr, char *str)
 		{
 			arr[i][j] = *str - '0';
 			j++;
-			if (j == g_cols)
+			if (j == 4)
 			{
 				j = 0;
 				i++;

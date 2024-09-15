@@ -12,9 +12,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-extern int g_rows;
-extern int g_cols;
-extern char	***g_tempMatrix;
+extern int rows;
+extern int cols;
+extern char	***tempMatrix;
 extern int **matrix;
 
 void	ft_check_current(int up_down, int row, int left_right, int col);
@@ -27,14 +27,14 @@ int     ft_add_number(int num, int row, int col, int **matrix);
 
 int ft_valid_cons(int *boundaries, int row, int col)
 {
-    if (row < (g_rows / 2) && col < (g_cols / 2))
+    if (row < (rows / 2) && col < (cols / 2))
         ft_check_current(boundaries[0], row, boundaries[2], col);
-    else if (row < (g_rows / 2) && col >= (g_cols / 2))
-        ft_check_current(boundaries[0], row, boundaries[3], ((g_cols - 1) - col));
-    else if (row >= (g_rows / 2) && col < (g_cols / 2))
-        ft_check_current(boundaries[1], ((g_rows - 1) - row), boundaries[2], col);
-    else if (row >= (g_rows / 2) && col >= (g_cols / 2))
-        ft_check_current(boundaries[1], ((g_rows - 1) - row), boundaries[2], ((g_cols - 1) - col));
+    else if (row < (rows / 2) && col >= (cols / 2))
+        ft_check_current(boundaries[0], row, boundaries[3], ((cols - 1) - col));
+    else if (row >= (rows / 2) && col < (cols / 2))
+        ft_check_current(boundaries[1], ((rows - 1) - row), boundaries[2], col);
+    else if (row >= (rows / 2) && col >= (cols / 2))
+        ft_check_current(boundaries[1], ((rows - 1) - row), boundaries[2], ((cols - 1) - col));
 	ft_vertical_pairs(boundaries[0], boundaries[1], row, col);
 	ft_horizonal_pairs(boundaries[2], boundaries[3], row, col);
 
@@ -46,8 +46,8 @@ void	ft_check_current(int up_down, int row, int left_right, int col)
 	int		min_val;
 	int		temp;
 
-	min_val = g_cols - (up_down - (row + 1));
-	temp = g_rows - (left_right - (col + 1));
+	min_val = cols - (up_down - (row + 1));
+	temp = rows - (left_right - (col + 1));
 	if (min_val < temp)
 	{
 		ft_add_exception(min_val, row, col);
@@ -63,15 +63,15 @@ int		ft_add_exception(int exc_min, int row, int col)
 	printf("%d\n", exc_min);
 	if (exc_min == 1)
 	{
-		ft_strcpy(g_tempMatrix[row][col], "-2-3-4");
+		ft_strcpy(tempMatrix[row][col], "-2-3-4");
 	}
 	else if (exc_min == 2)
 	{
-		ft_strcpy(g_tempMatrix[row][col], "-3-4");
+		ft_strcpy(tempMatrix[row][col], "-3-4");
 	}
 	else if (exc_min == 3)
 	{
-		ft_strcpy(g_tempMatrix[row][col], "-4");
+		ft_strcpy(tempMatrix[row][col], "-4");
 	}
 	return (0);
 }
@@ -86,16 +86,16 @@ int		ft_vertical_pairs(int up, int down, int row, int col)
 	int		nb;
 
 	nb = 0;
-	while (nb < g_rows)
+	while (nb < rows)
 	{
 		if (up == 4 && down == 1)
 			ft_add_number(nb + 1, nb, col, matrix);
 		else if (up == 1 && down == 4)
-			ft_add_number(g_rows - nb, nb, col, matrix);
+			ft_add_number(rows - nb, nb, col, matrix);
 		else if (up == 1 && row == 0)
-			ft_add_number(g_rows, 0, col, matrix);
+			ft_add_number(rows, 0, col, matrix);
 		else if (down == 1 && row == 3)
-			ft_add_number(g_rows, 3, col, matrix);
+			ft_add_number(rows, 3, col, matrix);
 		nb++;
 	}
 	return (0);

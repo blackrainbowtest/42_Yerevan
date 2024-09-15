@@ -1,64 +1,58 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   add_num.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/15 19:22:36 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/15 20:17:54 by aramarak         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
-extern char	***g_tempMatrix;
-extern int	g_rows;
-extern int	g_cols;
 void	ft_stradd(char *dest, const char *src);
 void	int_to_str(int num, char *str);
-void	ft_set_matric_data(int row, int col, char *str);
+void	ft_set_matric_data(int *coord, char *str, char ***tempMatrix);
 
-int	ft_add_number(int num, int row, int col, int **matrix)
+int	ft_add_number(int num, int *coord, int **matrix, char ***tempMatrix)
 {
 	int		i;
 	char	str[3];
+	int		row;
+	int		col;
 
 	i = 0;
+	row = coord[0];
+	col = coord[1];
 	matrix[row][col] = num;
-	while (i < g_cols)
+	while (i < 4)
 	{
 		int_to_str(num, str);
 		if (!matrix[i][col])
 		{
-			ft_stradd(g_tempMatrix[i][col], str);
+			ft_stradd(tempMatrix[i][col], str);
 		}
-			ft_set_matric_data(row, col, str);
+			ft_set_matric_data(coord, str, tempMatrix);
 		i++;
 	}
 	i = 0;
-	while (i < g_rows)
+	while (i < 4)
 	{
 		int_to_str(num, str);
 		if (!matrix[row][i])
 		{
-			ft_stradd(g_tempMatrix[row][i], str);
+			ft_stradd(tempMatrix[row][i], str);
 		}
-			ft_set_matric_data(row, col, str);
+			ft_set_matric_data(coord, str, tempMatrix);
 		i++;
 	}
 	return (0);
 }
 
-void	ft_set_matric_data(int row, int col, char *str)
+void	ft_set_matric_data(int *coord, char *str, char ***tempMatrix)
 {
 	int		nb;
+	int		row;
+	int		col;
 
 	nb = 0;
-	while (nb < g_rows)
+	row = coord[0];
+	col = coord[1];
+	while (nb < 4)
 	{
 		if (nb != row)
-			ft_stradd(g_tempMatrix[nb][col], str);
+			ft_stradd(tempMatrix[nb][col], str);
 		if (nb != col)
-			ft_stradd(g_tempMatrix[row][nb], str);
+			ft_stradd(tempMatrix[row][nb], str);
 		nb++;
 	}
 }
