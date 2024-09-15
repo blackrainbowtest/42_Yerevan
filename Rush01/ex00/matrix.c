@@ -5,46 +5,34 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/14 17:30:56 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/14 21:38:09 by aramarak         ###   ########.fr       */
+/*   Created: 2024/09/15 20:00:24 by aramarak          #+#    #+#             */
+/*   Updated: 2024/09/15 20:00:26 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+// matrix.c ex01
 
 #include <stdlib.h>
 #include <unistd.h>
 
-int	*ft_create_array(int cols)
-{
-	int		*d;
-	int		i;
+extern int g_rows;
+extern int g_cols;
 
-	i = 0;
-	d = (int *)malloc(cols * sizeof(int));
-	if (!d)
-	{
-		write(2, "Error", 5);
-		return (0);
-	}
-	while(i < cols)
-		d[i++] = 0;
-	return (d);
-}
-
-int	**ft_create_matrix(int rows, int cols)
+int	**ft_create_matrix(void)
 {
 	int		**d;
 	int		nb;
 
 	nb = 0;
-	d = (int **)malloc(rows * sizeof(int *));
+	d = (int **)malloc(g_rows * sizeof(int *));
 	if (!d)
 	{
 		write(2, "Error", 5);
 		return (0);
 	}
-	while (nb < rows)
+	while (nb < g_rows)
 	{
-		d[nb] = (int *)malloc(cols * sizeof(int));
+		d[nb] = (int *)malloc(g_cols * sizeof(int));
 		if (!d[nb])
 		{
 			write(2, "Error", 5);
@@ -58,20 +46,20 @@ int	**ft_create_matrix(int rows, int cols)
 	return (d);
 }
 
-void	ft_free_matrix(int **d, int rows)
+void	ft_free_matrix(int **arr)
 {
 	int		i;
 
 	i = 0;
-	while (i < rows)
+	while (i < g_rows)
 	{
-		free(d[i]);
+		free(arr[i]);
 		i++;
 	}
-	free(d);
+	free(arr);
 }
 
-void	ft_fill_matrix(int **arr, int cols, char *str)
+void	ft_fill_matrix(int **arr, char *str)
 {
 	int		i;
 	int		j;
@@ -80,45 +68,16 @@ void	ft_fill_matrix(int **arr, int cols, char *str)
 	j = 0;
 	while (*str)
 	{
-		while (*str == ' ')
-			str++;
-		if (*str >= '0' && *str <= '4')
+		if (*str >= '0' && *str <= '9')
 		{
 			arr[i][j] = *str - '0';
 			j++;
-			if (j == cols)
+			if (j == g_cols)
 			{
 				j = 0;
 				i++;
 			}
 		}
 		str++;
-	}
-}
-
-/*
- * Debug print
- * 
- */
-void	ft_print_matrix(int **arr, int rows, int cols)
-{
-	int		i;
-	int		j;
-	char	c;
-
-	i = 0;
-	j = 0;
-	while (i < rows)
-	{
-		while (j < cols)
-		{
-			c = arr[i][j] + '0';
-			write(1, &c, 1);
-			write(1, " ", 1);
-			j++;
-		}
-		j = 0;
-		write(1, "\n", 1);
-		i++;
 	}
 }
