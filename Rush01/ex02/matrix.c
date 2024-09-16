@@ -54,7 +54,7 @@ void	ft_fill_matrix(int **arr, char *str, int cols)
 	{
 		if (*str >= '0' && *str <= '9')
 		{
-			arr[i][j] = *str - '0';
+			arr[row][col] = *str - '0';
 			col++;
 			if (col == cols)
 			{
@@ -79,11 +79,12 @@ void	ft_display_matrix(int **matrix, int rows, int cols)
 		while (col < cols)
 		{
 			ch = matrix[row][col];
+			ch += '0';
 			write(1, &ch, 1);
 			write(1, " ", 1);
 			col++;
 		}
-		write(1, '\n', 1);
+		write(1, "\n", 1);
 		row++;
 	}
 }
