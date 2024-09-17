@@ -10,4 +10,33 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+int ft_atoi(char *str)
+{
+    int     res;
+    int     sign;
 
+    sign = 1;
+    res = 0;
+    while (*str == ' ' || (*str >= 9 && *str <= 13))
+        str++;
+    while (*str == 43 || *str == 45)
+    {
+        if (*str == 45)
+            sign *= -1;
+        str++;
+    }
+    while (*str >= 48 && *str <= 57)
+    {
+        res = res * 10 + (*str - 48);
+        str++;
+    }
+    return (res * sign);
+}
+/*
+#include <stdio.h>
+int main(void)
+{
+    char s[] = "   -1234";
+    printf("%d", ft_atoi(s));
+    return (0);
+}*/
