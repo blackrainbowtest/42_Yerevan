@@ -1,23 +1,41 @@
 #include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 
-int	**ft_create_matrix(int rows, int cols);
+int		**ft_create_matrix(int rows, int cols);
 void	ft_free_matrix(int **matrix, int rows);
 void	ft_fill_matrix(int **arr, char *str, int cols);
 void	ft_display_matrix(int **arr, int rows, int cols);
+int		ft_check_up_hor_vision(int **matrix, int index, int *limits);
+int		ft_check_dw_hor_vision(int **matrix, int index, int *limits);
+int		ft_check_l_ver_vision(int **matrix, int index, int *limits);
+int		ft_check_r_ver_vision(int **matrix, int index, int *limits);
 
 int	ft_check_cell(int **matrix, int *pos, int **arr, int num)
 {
 	int		nb;
-	
+	int		valid;
+
 	nb = 0;
 	while (nb < 4)
 	{
 		if (matrix[pos[0]][nb] == num || matrix[nb][pos[1]] == num)
+		{
+			matrix[pos[0]][pos[1]] = 0;
 			return (0);
+		}
 		nb++;
 	}
-	return (1);
+	matrix[pos[0]][pos[1]] = num;
+	valid = 1;
+	valid &= ft_check_up_hor_vision(matrix, pos[1], arr[0]);
+	valid &= ft_check_dw_hor_vision(matrix, pos[1], arr[1]);
+	valid &= ft_check_l_ver_vision(matrix, pos[0], arr[2]);
+	valid &= ft_check_r_ver_vision(matrix, pos[0], arr[3]);
+	printf("Validation checking: %d\n", valid);
+	if (!valid)
+		matrix[pos[0]][pos[1]] = 0;
+	return (valid);
 }
 
 int	ft_run_loop(int **matrix, int **arr, int row, int col)
@@ -27,9 +45,7 @@ int	ft_run_loop(int **matrix, int **arr, int row, int col)
 
 	nb = 1;
 	if (row == 3 && col > 3)
-	{
 		return (1);
-	}
 	if (col == 4)
 	{
 		row++;
