@@ -62,10 +62,6 @@ int	ft_check_d_ver_vision(int **matrix, int column, int *limits)
 			last_max = matrix[nb][column];
 			vision_count++;
 		}
-		if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
-		{
-			printf("is_row_full - %d\n", is_row_full);
-		}
 		nb--;
 	}
 	if (!is_row_full)
@@ -91,10 +87,6 @@ int	ft_check_l_hor_vision(int **matrix, int row, int *limits)
 			vision_count++;
 			last_max = matrix[row][nb];
 		}
-		if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
-		{
-			printf("is_row_full - %d\n", is_row_full);
-		}
 		nb++;
 	}
 	if (!is_row_full)
@@ -119,10 +111,6 @@ int	ft_check_r_hor_vision(int **matrix, int row, int *limits)
 		{
 			last_max = matrix[row][nb];
 			vision_count++;
-		}
-		if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
-		{
-			printf("is_row_full - %d - %d\n", is_row_full, last_max);
 		}
 		nb--;
 	}

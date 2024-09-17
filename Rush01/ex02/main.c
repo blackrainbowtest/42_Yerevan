@@ -1,6 +1,5 @@
 #include <stdlib.h>
 #include <unistd.h>
-#include <stdio.h>
 
 int		**ft_create_matrix(int rows, int cols);
 void	ft_free_matrix(int **matrix, int rows);
@@ -10,6 +9,35 @@ int		ft_check_u_ver_vision(int **matrix, int index, int *limits);
 int		ft_check_d_ver_vision(int **matrix, int index, int *limits);
 int		ft_check_l_hor_vision(int **matrix, int index, int *limits);
 int		ft_check_r_hor_vision(int **matrix, int index, int *limits);
+
+int	ft_final_check(int **matrix, int **arr)
+{
+	int		valid;
+	int		i;
+
+	valid = 1;
+	i = 0;
+	while(i < 4)
+    {
+        valid &= ft_check_l_hor_vision(matrix, i, arr[2]);
+        valid &= ft_check_r_hor_vision(matrix, i, arr[3]);
+        valid &= ft_check_u_ver_vision(matrix, i, arr[0]);
+        valid &= ft_check_d_ver_vision(matrix, i, arr[1]);
+		i++;
+    }
+    return (valid);
+}
+
+int	ft_row_check(int **matrix, int **arr, int row)
+{
+	int		valid;
+
+	valid = 1;
+	valid &= ft_check_l_hor_vision(matrix, row, arr[2]);
+	valid &= ft_check_r_hor_vision(matrix, row, arr[3]);
+	return (valid);
+
+}
 
 int	ft_check_cell(int **matrix, int *pos, int **arr, int num)
 {
@@ -21,32 +49,17 @@ int	ft_check_cell(int **matrix, int *pos, int **arr, int num)
 	{
 		if (matrix[pos[0]][nb] == num || matrix[nb][pos[1]] == num)
 		{
-			if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
-			{
-				printf("num:%d\n", num);
-			}
 			matrix[pos[0]][pos[1]] = 0;
 			return (0);
 		}
 		nb++;
 	}
 	matrix[pos[0]][pos[1]] = num;
-	if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
-	{
-	// printf("Validation left: %d\n", ft_check_l_hor_vision(matrix, pos[0], arr[2]));
-	// printf("Validation right: %d\n", ft_check_r_hor_vision(matrix, pos[0], arr[3]));
-	ft_display_matrix(matrix, 4, 4);
-	printf("current_Value: %d\n\n", matrix[pos[0]][pos[1]]);
-	}
 	valid = 1;
 	valid &= ft_check_u_ver_vision(matrix, pos[1], arr[0]);
 	valid &= ft_check_d_ver_vision(matrix, pos[1], arr[1]);
 	valid &= ft_check_l_hor_vision(matrix, pos[0], arr[2]);
 	valid &= ft_check_r_hor_vision(matrix, pos[0], arr[3]);
-		if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
-		{
-		printf("current_Value: %d\n\n", matrix[pos[0]][pos[1]]);
-		}
 	if (!valid)
 	{
 		matrix[pos[0]][pos[1]] = 0;
@@ -64,11 +77,17 @@ int	ft_run_loop(int **matrix, int **arr, int row, int col)
 	found_solution = 0;
 	if (col == 4)
 	{
+		if (!ft_row_check(matrix, arr, row))
+			return (0);
 		row++;
 		col = 0;
 	}
 	if (row == 4)
+	{
+		if (!ft_final_check(matrix, arr))
+			return (0);
 		return (1);
+	}
 	while (nb <= 4)
 	{
 		pos[0] = row;
