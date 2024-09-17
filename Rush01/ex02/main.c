@@ -6,10 +6,10 @@ int		**ft_create_matrix(int rows, int cols);
 void	ft_free_matrix(int **matrix, int rows);
 void	ft_fill_matrix(int **arr, char *str, int cols);
 void	ft_display_matrix(int **arr, int rows, int cols);
-int		ft_check_up_hor_vision(int **matrix, int index, int *limits);
-int		ft_check_dw_hor_vision(int **matrix, int index, int *limits);
-int		ft_check_l_ver_vision(int **matrix, int index, int *limits);
-int		ft_check_r_ver_vision(int **matrix, int index, int *limits);
+int		ft_check_u_ver_vision(int **matrix, int index, int *limits);
+int		ft_check_d_ver_vision(int **matrix, int index, int *limits);
+int		ft_check_l_hor_vision(int **matrix, int index, int *limits);
+int		ft_check_r_hor_vision(int **matrix, int index, int *limits);
 
 int	ft_check_cell(int **matrix, int *pos, int **arr, int num)
 {
@@ -27,12 +27,17 @@ int	ft_check_cell(int **matrix, int *pos, int **arr, int num)
 		nb++;
 	}
 	matrix[pos[0]][pos[1]] = num;
+	if (matrix[3][0] == 3 && matrix[0][0] == 2 && matrix[1][0] == 4)
+	{
+	// printf("Validation updown: %d\n", ft_check_l_ver_vision(matrix, pos[0], arr[2]));
+	// printf("Validation updown: %d\n", ft_check_r_ver_vision(matrix, pos[0], arr[3]));
+	ft_display_matrix(matrix, 4, 4);
+	}
 	valid = 1;
-	valid &= ft_check_up_hor_vision(matrix, pos[1], arr[0]);
-	valid &= ft_check_dw_hor_vision(matrix, pos[1], arr[1]);
-	valid &= ft_check_l_ver_vision(matrix, pos[0], arr[2]);
-	valid &= ft_check_r_ver_vision(matrix, pos[0], arr[3]);
-	printf("Validation checking: %d\n", valid);
+	valid &= ft_check_u_ver_vision(matrix, pos[1], arr[0]);
+	valid &= ft_check_d_ver_vision(matrix, pos[1], arr[1]);
+	valid &= ft_check_l_hor_vision(matrix, pos[0], arr[2]);
+	valid &= ft_check_r_hor_vision(matrix, pos[0], arr[3]);
 	if (!valid)
 		matrix[pos[0]][pos[1]] = 0;
 	return (valid);
@@ -42,9 +47,11 @@ int	ft_run_loop(int **matrix, int **arr, int row, int col)
 {
 	int		nb;
 	int		pos[2];
+	int		found_solution;
 
 	nb = 1;
-	if (row == 3 && col > 3)
+	found_solution = 0;
+	if (row == 4)
 		return (1);
 	if (col == 4)
 	{
@@ -59,12 +66,15 @@ int	ft_run_loop(int **matrix, int **arr, int row, int col)
 		{
 			matrix[row][col] = nb;
 			if (ft_run_loop(matrix, arr, row, col + 1))
-				return (1);
+			{
+				found_solution = 1;
+				break;
+			}
 			matrix[row][col] = 0;
 		}
 		nb++;
 	}
-	return (0);
+	return (found_solution);
 }
 
 int	main(int argc, char **argv)
