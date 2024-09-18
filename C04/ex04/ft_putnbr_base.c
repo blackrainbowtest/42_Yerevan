@@ -1,8 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/18 19:27:58 by aramarak          #+#    #+#             */
+/*   Updated: 2024/09/18 19:40:48 by aramarak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 int	is_valid_base(char *base)
 {
-	int i, j;
+	int		i;
+	int		j;
 
 	i = 0;
 	while (base[i])
@@ -31,23 +44,23 @@ void	ft_putnbr_base(int nbr, char *base)
 	int		size;
 
 	size = 0;
-	if (!is_valid_base(base))
-		return;
-	while (base[size])
-		size++;
-	if (nbr < 0)
+	if (is_valid_base(base))
 	{
-		ft_putchar('-');
-		if (nbr == -2147483648)
-        {
-            write(1, "2147483648", 10);
-            return;
-        }
-		nbr = -nbr;
+		while (base[size])
+			size++;
+		if (nbr < 0)
+		{
+			ft_putchar('-');
+			if (nbr == -2147483648)
+			{
+				write(1, "2147483648", 10);
+			}
+			nbr = -nbr;
+		}
+		if (nbr >= size)
+			ft_putnbr_base(nbr / size, base);
+		ft_putchar(base[nbr % size]);
 	}
-	if (nbr >= size)
-        ft_putnbr_base(nbr / size, base);
-    ft_putchar(base[nbr % size]);
 }
 /*
 int main(void)
