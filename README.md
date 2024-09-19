@@ -60,15 +60,15 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>C00</th>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex00"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex01"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex02"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex03"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex04"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex05"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex06"><span>OK</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex07"><span>KO</span></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex08"><span>NTI</span></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
