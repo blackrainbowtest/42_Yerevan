@@ -39,21 +39,23 @@ Study, analyze, and learn from your own mistakes.
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex08"><span>OK</span></a></td>
     <td>NTI</td>
     <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
 <tr>
     <th>shell01</th>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
   </tr>
 </table>
 C01 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: KO | ex08: Nothing turned in
