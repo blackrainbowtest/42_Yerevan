@@ -60,7 +60,7 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>C00</th>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex00"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex01"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex02"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex03"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
