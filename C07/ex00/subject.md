@@ -1,6 +1,6 @@
 <div>
-# Chapter III
-## Exercise 00: ft_strdup
+<h2>Chapter III</h2>
+<h2>## Exercise 00: ft_strdup</h2>
 <table align="left">
 	<tr>
 		<th colspan="2">
