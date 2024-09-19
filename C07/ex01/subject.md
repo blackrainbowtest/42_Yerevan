@@ -1,19 +1,19 @@
 <div>
-<h2>Chapter III</h2>
-<h3>Exercise 00: ft_strdup</h3>
+<h2>Chapter IV</h2>
+<h3>Exercise 01 : ft_range</h3>
 <table align="center">
 	<tr>
 		<th colspan="2">
-			ft_strdup
+			ft_range
 		</th>
 	</tr>
 	<tr>
 		<th>Turn-in directory :</th>
-		<td>ex00/</td>
+		<td>ex01/</td>
 	</tr>
 	<tr>
 		<th>Files to turn in :</th>
-		<td>ft_strdup.c</td>
+		<td>ft_range.c</td>
 	</tr>
 	<tr>
 		<th>Allowed functions :</th>
@@ -25,6 +25,6 @@
 <p>• Here’s how it should be prototyped :</p>
 
 ```C
-char *ft_strdup(char *src);
+int *ft_range(int min, int max);
 ```
 </div>
