@@ -20,21 +20,26 @@ void	ft_print(char ch)
 void	ft_putnbr(int nb)
 {
 	if (nb == -2147483648)
+	{
 		write(1, "-2147483648", 11);
-	if (nb < 0)
-	{
-		write(1, "-", 1);
-		nb = -nb;
 	}
-	if (nb > 9)
+	else
 	{
-		ft_putnbr(nb / 10);
+		if (nb < 0)
+		{
+			write(1, "-", 1);
+			nb = -nb;
+		}
+		if (nb > 9)
+		{
+			ft_putnbr(nb / 10);
+		}
+		ft_print((nb % 10 + '0'));
 	}
-	ft_print((nb % 10 + '0'));
 }
-/*
+
 int	main(void)
 {
 	ft_putnbr(174);
 	return (0);
-}*/
+}
