@@ -140,16 +140,16 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>C05</th>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex01/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex02/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex03/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex04/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex05/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex07/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex08/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -170,8 +170,8 @@ Study, analyze, and learn from your own mistakes.
     <td>-</td>
     <td>-</td>
   </tr>
-  <tr>
-    <th>C01</th>
+  <!-- <tr>
+    <th>C07</th>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex01/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex02/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
@@ -185,7 +185,7 @@ Study, analyze, and learn from your own mistakes.
     <td>-</td>
     <td>-</td>
     <td>-</td>
-  </tr>
+  </tr> -->
 </table>
 
 
