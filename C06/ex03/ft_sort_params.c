@@ -24,7 +24,9 @@ int	ft_strcmp(char *s1, char *s2)
 	int		i;
 
 	i = 0;
-	while ()
+	while (s1[i] && s2[i] && s1[i] != s2[i])
+		i++;
+	return (s1[i] - s2[i]);
 }
 
 void	ft_sort_args(int size, char **arr)
@@ -38,7 +40,7 @@ void	ft_sort_args(int size, char **arr)
 		j = 0;
 		while (j < size - 1 - i)
 		{
-			if (ft_strcmp(arr[j], arr[j + 1] > 0))
+			if (ft_strcmp(arr[j], arr[j + 1]) > 0)
 					ft_swap_char_ptr(&arr[j], &arr[j + 1]);
 			j++;
 		}
@@ -51,16 +53,9 @@ int	main(int argc, char **argv)
 	int		i;
 
 	i = 1;
-
 	if (argc > 1)
 	{
-		char	*arr[argc - 1];
-		while (i < argc)
-		{
-			arr[i - 1] = argv[i];
-			i++;
-		}
-		ft_sort_args((argc - 1), arr);
+		ft_sort_args((argc - 1), argv + 1);
 		i = 0;
 		while (i < argc - 1)
 			ft_display(arr[i++]);
