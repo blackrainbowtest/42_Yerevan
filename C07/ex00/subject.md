@@ -1,6 +1,6 @@
 # Chapter III
 ## Exercise 00: ft_strdup
-<div align="left">
+<div align="center">
 <table align="left">
 	<tr>
 		<th colspan="2">
