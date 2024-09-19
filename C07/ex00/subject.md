@@ -1,6 +1,6 @@
 # Chapter III
 ## Exercise 00: ft_strdup
-
+<div align="left">
 <table align="center">
 	<tr>
 		<th colspan="2">
@@ -20,7 +20,7 @@
 		<td>malloc</td>
 	</tr>
 </table>
-
+</div>
 
 • Reproduce the behavior of the function strdup (man strdup).
 • Here’s how it should be prototyped :
