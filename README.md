@@ -61,14 +61,14 @@ Study, analyze, and learn from your own mistakes.
   <tr>
     <th>C00</th>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C00/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex01"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex02"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex03"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex04"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex05"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex06"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex07"><img src="https://img.shields.io/badge/status-KO-red" alt="KO" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex08"><img src="https://img.shields.io/badge/status-NTI-orange" alt="NTI" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex01/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex02/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex03/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex04/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex05/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex07/"><img src="https://img.shields.io/badge/status-KO-red" alt="KO" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/С00/ex08/"><img src="https://img.shields.io/badge/status-NTI-orange" alt="NTI" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
