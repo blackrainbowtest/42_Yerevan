@@ -85,6 +85,6 @@ int	ft_ten_queens_puzzle(void)
 #include <stdio.h>
 int	main(void)
 {
-	printf("%d", ft_eight_queens_puzzle());
+	printf("%d", ft_ten_queens_puzzle());
 	return (0);
 }*/
