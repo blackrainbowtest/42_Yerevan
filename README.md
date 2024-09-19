@@ -37,7 +37,7 @@ Study, analyze, and learn from your own mistakes.
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex06"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex07"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex08"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td>NTI</td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex09"><img src="https://img.shields.io/badge/status-NTI-orange" alt="NTI" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
