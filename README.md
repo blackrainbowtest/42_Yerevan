@@ -28,18 +28,17 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>shell00</th>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
-    <tr></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex00"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex01"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex02"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex03"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex04"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex05"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex06"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex07"><span>OK</span></a></tr>
+    <tr><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex08"><span>OK</span></a></tr>
+    <tr>NTI</tr>
+    <tr>-</tr>
   </tr>
 <tr>
     <th>shell01</th>
