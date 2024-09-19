@@ -28,7 +28,7 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>shell00</th>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex00"><span>OK</span></a></td>
+    <td color="green"><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex00"><span>OK</span></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex01"><span>OK</span></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex02"><span>OK</span></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex03"><span>OK</span></a></td>
