@@ -20,7 +20,8 @@ int	is_valid_base(char *base)
 	i = 0;
 	while (base[i])
 	{
-		if (base[i] == '+' || base[i] == '-')
+		if (base[i] == '+' || base[i] == '-'
+			|| base[i] > 126 || base[i] <= ' ' )
 			return (0);
 		j = i + 1;
 		while (base[j])
@@ -44,16 +45,16 @@ void	ft_putnbr_base(int nbr, char *base)
 	int		size;
 
 	size = 0;
+	while (base[size])
+		size++;
 	if (is_valid_base(base))
 	{
-		while (base[size])
-			size++;
 		if (nbr < 0)
 		{
 			ft_putchar('-');
 			if (nbr == -2147483648)
 			{
-				write(1, "2147483648", 10);
+				ft_putnbr_base(-(nbr / size), base);
 			}
 			nbr = -nbr;
 		}
@@ -63,13 +64,27 @@ void	ft_putnbr_base(int nbr, char *base)
 	}
 }
 /*
-int main(void)
+int	main(void)
 {
-	ft_putnbr_base(255, "poneyvif");
+	ft_putnbr_base(-2147483648, "poneyvif");
+	write(1, "\n", 1);
+	ft_putnbr_base(-2147483648, "0123456789ABCDEF");
+	write(1, "\n", 1);
+	ft_putnbr_base(-2147483648, "01");
+	write(1, "\n", 1);
+	ft_putnbr_base(-2147483648, "0123456789");
+	write(1, "\n", 1);
+	ft_putnbr_base(-255, "poneyvif");
 	write(1, "\n", 1);
 	ft_putnbr_base(-255, "0123456789ABCDEF");
 	write(1, "\n", 1);
-	ft_putnbr_base(255, "01");
+	ft_putnbr_base(-255, "01");
+	write(1, "\n", 1);
+	ft_putnbr_base(-255, "0123456789");
+	write(1, "\n", 1);
+	ft_putnbr_base(0, "0123456789");
+	write(1, "\n", 1);
+	ft_putnbr_base(999, "0123456789+");
 	write(1, "\n", 1);
 	return (0);
 }*/
