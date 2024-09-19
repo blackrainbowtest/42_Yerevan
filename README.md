@@ -84,7 +84,7 @@ Study, analyze, and learn from your own mistakes.
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C01/ex05/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C01/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C01/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C01/ex07/"><img src="https://img.shields.io/badge/status-KO-brightred" alt="KO" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C01/ex07/"><img src="https://img.shields.io/badge/status-KO-red" alt="KO" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
