@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_params.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/19 19:47:57 by aramarak          #+#    #+#             */
+/*   Updated: 2024/09/19 19:48:28 by aramarak         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
 void	ft_display(char *str)
@@ -41,7 +53,7 @@ void	ft_sort_args(int size, char **arr)
 		while (j < size - 1 - i)
 		{
 			if (ft_strcmp(arr[j], arr[j + 1]) > 0)
-					ft_swap_char_ptr(&arr[j], &arr[j + 1]);
+				ft_swap_char_ptr(&arr[j], &arr[j + 1]);
 			j++;
 		}
 		i++;
