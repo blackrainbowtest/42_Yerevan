@@ -1,7 +1,7 @@
 # Chapter III
 ## Exercise 00: ft_strdup
 <div align="left">
-<table align="center">
+<table align="left">
 	<tr>
 		<th colspan="2">
 			ft_strdup
