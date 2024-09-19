@@ -37,9 +37,9 @@ void	ft_putnbr(int nb)
 		ft_print((nb % 10 + '0'));
 	}
 }
-
+/*
 int	main(void)
 {
 	ft_putnbr(174);
 	return (0);
-}
+}*/
