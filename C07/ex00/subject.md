@@ -1,6 +1,6 @@
 <div>
 <h2>Chapter III</h2>
-<h2>## Exercise 00: ft_strdup</h2>
+<h3>Exercise 00: ft_strdup</h3>
 <table align="left">
 	<tr>
 		<th colspan="2">
@@ -20,9 +20,9 @@
 		<td>malloc</td>
 	</tr>
 </table>
-	<br />
-• Reproduce the behavior of the function strdup (man strdup).
-• Here’s how it should be prototyped :
+	
+<p>• Reproduce the behavior of the function strdup (man strdup).</p>
+<p>• Here’s how it should be prototyped :</p>
 
 ```C
 char *ft_strdup(char *src);
