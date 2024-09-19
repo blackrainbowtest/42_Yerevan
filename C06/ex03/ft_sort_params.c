@@ -15,7 +15,7 @@ int	main(int argc, char **argv)
 	int		i;
 
 	i = 1;
-	ft_sort_param();
+	// sort logic here
 	while (i < argc)
 		ft_display(argv[i++]);
 	return (0);
