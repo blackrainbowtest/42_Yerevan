@@ -170,22 +170,22 @@ Study, analyze, and learn from your own mistakes.
     <td>-</td>
     <td>-</td>
   </tr>
-  <!-- <tr>
+  <tr>
     <th>C07</th>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex01/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex02/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex03/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex04/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex05/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex07/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C07/ex08/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
-  </tr> -->
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
 </table>
 
 
