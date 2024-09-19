@@ -6,7 +6,7 @@
 /*   By: aramarak <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/19 18:04:15 by aramarak          #+#    #+#             */
-/*   Updated: 2024/09/19 18:05:23 by aramarak         ###   ########.fr       */
+/*   Updated: 2024/09/19 21:44:18 by aramarak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int	ft_set_queen(int *arr, int row)
 	return (display_solution);
 }
 
-int	ft_eight_queens_puzzle(void)
+int	ft_ten_queens_puzzle(void)
 {
 	int		arr[10];
 	int		row;
