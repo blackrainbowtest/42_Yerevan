@@ -20,11 +20,12 @@
 		<td>malloc</td>
 	</tr>
 </table>
-</div>
-
+	<br />
 • Reproduce the behavior of the function strdup (man strdup).
 • Here’s how it should be prototyped :
 
 ```C
 char *ft_strdup(char *src);
 ```
+</div>
+
