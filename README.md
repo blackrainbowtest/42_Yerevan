@@ -28,15 +28,15 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>shell00</th>
-    <td style="color: green;"><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex00"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex01"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex02"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex03"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex04"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex05"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex06"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex07"><span>OK</span></a></td>
-    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex08"><span>OK</span></a></td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex00)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex01)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex02)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex03)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex04)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex05)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex06)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex07)</td>
+    <td>[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex08)</td>
     <td>NTI</td>
     <td>-</td>
     <td>-</td>
@@ -172,7 +172,7 @@ Study, analyze, and learn from your own mistakes.
   </tr>
 </table>
 
-[![OK](https://img.shields.io/badge/status-OK-brightgreen)](https://github.com/blackrainbowtest/42_Yerevan/tree/main/Shell00/ex00)
+
 C01 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: KO | ex08: Nothing turned in
 C02 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: OK | ex09: OK | ex10: Does not compile | ex11: KO | ex12: Nothing turned in
 C03 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: KO
