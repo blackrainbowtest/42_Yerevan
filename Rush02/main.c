@@ -6,7 +6,7 @@
 /*   By: apetoyan <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/21 12:35:08 by apetoyan          #+#    #+#             */
-/*   Updated: 2024/09/21 17:44:07 by apetoyan         ###   ########.fr       */
+/*   Updated: 2024/09/21 18:51:44 by apetoyan         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "lib.h"
@@ -18,7 +18,9 @@ void div_ft(char *num, int len, int i)
 	int m;
 	int start;
 	int end;
-	
+	static int	part;
+
+	//part = 0;
 	m = 0;
 	start = len - i * 3;
 	end = start + 3;
@@ -30,6 +32,7 @@ void div_ft(char *num, int len, int i)
 			m++;
 			start++;
 		}
+	//	func_3anish(arr, len);
 	}
 	else if ((i - 1) * 3 + 2 <= len)
 	{
@@ -39,18 +42,25 @@ void div_ft(char *num, int len, int i)
 			m++;
 			start++;
 		}
+	//	func_2nish(arr, len);
+	}
+	else if ((i - 1) * 3 + 1 <= len) {
+		arr[0] = num[0];
+		m = 1;
 	}
 	arr[m] = '\0';
 
 
 
-	if (i * 3 > len)
+	if (i * 3 > len - 1)
 	{
-		printf("%s\n", arr);
+	//	printf("%s\n", arr);
 		return ;
 	}
+	printf("%d\n", part);
+	part++;
 	div_ft(num, len, i + 1);
-	printf("%s\n", arr);
+	//printf("%s\n", arr);
 }
 
 char **split_arr(char *str)
@@ -60,7 +70,7 @@ char **split_arr(char *str)
 	int	m;
 	char *arrm;
 	char **strs;
-	
+
 	i = 0;
 	m = 0;
 	j = 0;
@@ -104,8 +114,7 @@ int main() {
 
 	strs = split_arr(arr);	
 	int i = 0;
-
-	div_ft("12345789", 8, 1);
+	div_ft("1234567891011128", 16, 1);
 	//printf("%s\n", strs[0]);
 /*
 	while (arr1[i])
