@@ -140,15 +140,15 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>C05</th>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
-    <td>-</td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex01/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex02/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex03/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex04/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex05/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex06/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex07/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C05/ex08/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
@@ -170,14 +170,25 @@ Study, analyze, and learn from your own mistakes.
     <td>-</td>
     <td>-</td>
   </tr>
+  <tr>
+    <th>C07</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
 </table>
 
 
-C01 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: KO | ex08: Nothing turned in
-C02 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: OK | ex06: OK | ex07: OK | ex08: OK | ex09: OK | ex10: Does not compile | ex11: KO | ex12: Nothing turned in
-C03 ex00: OK | ex01: OK | ex02: OK | ex03: OK | ex04: OK | ex05: KO
-C04 ex00: OK | ex01: OK | ex02: KO | ex03: OK | ex04: KO | ex05: Nothing turned in
-C05
-C06
+42 yerevan 2024
 
 </div>
