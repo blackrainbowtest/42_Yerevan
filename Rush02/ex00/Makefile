@@ -1,5 +1,5 @@
 NAME = rush-02
-SRC = main.c utils.c core.c utils_file.c print.c process.c split.c
+SRC = main.c utils.c core.c utils_file.c print.c process.c split.c helper.c
 OBJ = $(SRC:.c=.o)
 
 CC = gcc

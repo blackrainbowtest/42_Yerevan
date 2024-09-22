@@ -1,6 +1,19 @@
 #include "lib.h"
 #include "utils.h"
 
+void	ft_process_dict_data(char *num, int len, int i)
+{
+	static int	count;
+
+	count = 0;
+	if (i * 3 <= len)
+		ft_process_three(num, len, i, &count);
+	else if ((i - 1) * 3 + 2 <= len)
+		ft_process_two(num, len, i, &count);
+	else if ((i - 1) * 3 + 1 <= len)
+		ft_process_one(num, len, i, &count);
+}
+
 void	ft_process_three(char *num, int len, int i, int *count)
 {
 	char	arr[4];
@@ -17,7 +30,8 @@ void	ft_process_three(char *num, int len, int i, int *count)
 	(*count)++;
 	if (!(i * 3 >= len))
 		ft_process_dict_data(num, len, i + 1);
-	ft_print_three(arr, --(*count), 1);
+	ft_print_three(arr, (*count), 1);
+	(*count)--;
 }
 
 void	ft_process_two(char *num, int len, int i, int *count)
@@ -38,7 +52,8 @@ void	ft_process_two(char *num, int len, int i, int *count)
 	(*count)++;
 	if (!(i * 3 >= len))
 		ft_process_dict_data(num, len, i + 1);
-	ft_print_two(arr, --(*count), 1);
+	ft_print_two(arr, (*count), 1);
+	(*count)--;
 }
 
 void	ft_process_one(char *num, int len, int i, int *count)
@@ -50,5 +65,6 @@ void	ft_process_one(char *num, int len, int i, int *count)
 	(*count)++;
 	if (!(i * 3 >= len))
 		ft_process_dict_data(num, len, i + 1);
-	ft_print_one(arr, --(*count), 1);
+	ft_print_one(arr, (*count), 1);
+	(*count)--;
 }

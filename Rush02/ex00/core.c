@@ -28,16 +28,3 @@ char	**static_save(char **base)
 		tmp = base;
 	return (tmp);
 }
-
-void	ft_process_dict_data(char *num, int len, int i)
-{
-	static int	count;
-
-	count = 0;
-	if (i * 3 <= len)
-		ft_process_three(num, len, i, &count);
-	else if ((i - 1) * 3 + 2 <= len)
-		ft_process_two(num, len, i, &count);
-	else if ((i - 1) * 3 + 1 <= len)
-		ft_process_one(num, len, i, &count);
-}
