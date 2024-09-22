@@ -38,12 +38,12 @@ void	ft_print_one(char *str, int count, int is_first)
 	is_exit = 1;
 	if (str[0] != '0')
 	{
-		while (dict_data[i])
+		while (dict_data[i] && is_exit == 1)
 		{
 			if (dict_data[i][0] == str[0] && dict_data[i][1] == ':')
 			{
 				ft_get_word(i);
-				break;
+				is_exit = 0;
 			}
 			i++;
 		}
@@ -52,7 +52,7 @@ void	ft_print_one(char *str, int count, int is_first)
 		ft_get_tail(count);
 }
 
-void ft_get_word(int index)
+void	ft_get_word(int index)
 {
 	int		i;
 	int		is_word;
@@ -63,7 +63,7 @@ void ft_get_word(int index)
 	is_word = 0;
 	while (buff[index][i])
 	{
-		if (is_word) 
+		if (is_word)
 			write(1, &buff[index][i], 1);
 		if (buff[index][i] == ':')
 			is_word = 1;
