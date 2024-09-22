@@ -8,8 +8,8 @@ int	ft_atoi(const char *str)
 
 	sign = 1;
 	res = 0;
-	while (*str && (*str == ' ' || *str == '\n' || *str == '\t' ||
-			*str == '\v' || *str == '\f' || *str == '\r'))
+	while (*str && (*str == ' ' || *str == '\n' || *str == '\t'
+			|| *str == '\v' || *str == '\f' || *str == '\r'))
 		++str;
 	if (*str == '-')
 		sign = -1;
@@ -25,7 +25,7 @@ int	ft_atoi(const char *str)
 
 void	ft_putstr(const char *str)
 {
-	int i;
+	int		i;
 
 	i = 0;
 	while (str[i])
