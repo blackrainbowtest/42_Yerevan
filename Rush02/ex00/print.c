@@ -4,7 +4,7 @@
 void	ft_print_three(char *str, int count, int is_first)
 {
 	ft_print_three_helper(str, count, &is_first);
-	if (is_first && count > 0)
+	if (is_first && (count > 0))
 		ft_get_tail(count);
 }
 
@@ -23,7 +23,7 @@ void	ft_print_two(char *str, int count, int is_first)
 	{
 		ft_process_tens_digits(str, count);
 	}
-	if (is_first && count > 0)
+	if (is_first && (count > 0))
 		ft_get_tail(count);
 }
 
@@ -48,7 +48,7 @@ void	ft_print_one(char *str, int count, int is_first)
 			i++;
 		}
 	}
-	if (is_first && count > 0)
+	if (is_first && (count > 0))
 		ft_get_tail(count);
 }
 

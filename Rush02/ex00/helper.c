@@ -1,6 +1,20 @@
 #include "lib.h"
 #include "utils.h"
 
+void	ft_print_zero_helper(char *str, int count, int *is_first)
+{
+	if (str[0] == '0' && str[1] == '0' && str[2] == '0')
+	{
+		ft_print_two(++str, count, 0);
+		*is_first = 0;
+	}
+	else
+	{
+		ft_print_two(++str, count, *is_first);
+		*is_first = 0;
+	}
+}
+
 void	ft_print_three_helper(char *str, int count, int *is_first)
 {
 	char	**dict_data;
@@ -12,8 +26,7 @@ void	ft_print_three_helper(char *str, int count, int *is_first)
 	dict_data = static_save(NULL);
 	if (str[0] == '0')
 	{
-		ft_print_two(++str, count, *is_first);
-		*is_first = 0;
+		ft_print_zero_helper(str, count, is_first);
 	}
 	else
 	{
