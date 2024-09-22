@@ -5,7 +5,6 @@ int	main(int argc, char **argv) {
 		ft_putstr("Error\n");
 		return (1);
 	}
-	printf(atoi("  55l"));
 	if (argc == 2)
 	{
 		if (ft_core(argv[1], "numbers.dict"))

@@ -12,12 +12,22 @@ int	ft_core(char *str, char *dict)
 	if (!content)
 		return (1);
 	dict_data = ft_split_content(content, total_bytes);
+	static_save(dict_data);
 	free(content);
 	if (!dict_data)
 		return (1);
 	ft_process_dict_data(str, ft_strlen(str), 1);
 	free(dict_data);
 	return (0);
+}
+
+char	**static_save(char **base)
+{
+	static char	**tmp = NULL;
+
+	if (base != NULL)
+		tmp = base;
+	return (tmp);
 }
 
 void	ft_process_dict_data(char *num, int len, int i)
@@ -30,25 +40,42 @@ void	ft_process_dict_data(char *num, int len, int i)
 
 	m = 0;
 	start = len - i * 3;
+	if (start < 0)
+		start = 0;
 	end = start + 3;
 	if (i * 3 <= len)
+	{
 		while (start < end && start < len)
 			arr[m++] = num[start++];
+		arr[m] = '\0';
+		count++;
+		if (!(i * 3 >= len))
+			ft_process_dict_data(num, len, i + 1);
+		ft_print_three(arr, --count, 1);
+	}
 	else if ((i - 1) * 3 + 2 <= len)
 	{
-		start++;
+		end--;
 		while (start < end && start < len)
 			arr[m++] = num[start++];
+		arr[m] = '\0';
+		count++;
+		if (!(i * 3 >= len))
+			ft_process_dict_data(num, len, i + 1);
+		ft_print_two(arr, --count, 1);
 	}
 	else if ((i - 1) * 3 + 1 <= len)
 	{
+		printf("%s\n", "testt");
 		arr[0] = num[0];
 		m = 1;
+		arr[m] = '\0';
+		count++;
+		if (!(i * 3 >= len))
+			ft_process_dict_data(num, len, i + 1);
+		ft_print_one(arr, --count, 1);
 	}
-	arr[m] = '\0';
-	count++;
-	if (!(i * 3 >= len - 1))
-		ft_process_dict_data(num, len, i + 1);
+	
 }
 
 // FIXEME: need modified this code, need find current max length of rows and make arr by that responcive one
