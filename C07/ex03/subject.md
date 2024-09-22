@@ -1,5 +1,5 @@
 <div>
-<h2>Chapter IV</h2>
+<h2>Chapter VI</h2>
 <h3>Exercise 03 : ft_strjoin</h3>
 <table align="center">
 	<tr>
