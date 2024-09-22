@@ -1,7 +1,5 @@
 #include "lib.h"
 
-#include <stdio.h> //FIXME: delete after debug
-
 int	ft_core(char *str, char *dict)
 {
 	char	*content;
@@ -30,63 +28,18 @@ char	**static_save(char **base)
 	return (tmp);
 }
 
-void	ft_process_dict_data(char *num, int len, int i)
-{
-	char		arr[4];
-	int			m;
-	int			start;
-	int			end;
-	int static	count;
+void ft_process_dict_data(char *num, int len, int i) {
+    static int count = 0;
 
-	m = 0;
-	start = len - i * 3;
-	if (start < 0)
-		start = 0;
-	end = start + 3;
-	if (i * 3 <= len)
-	{
-		while (start < end && start < len)
-			arr[m++] = num[start++];
-		arr[m] = '\0';
-		count++;
-		if (!(i * 3 >= len))
-			ft_process_dict_data(num, len, i + 1);
-		ft_print_three(arr, --count, 1);
-	}
-	else if ((i - 1) * 3 + 2 <= len)
-	{
-		end--;
-		while (start < end && start < len)
-			arr[m++] = num[start++];
-		arr[m] = '\0';
-		count++;
-		if (!(i * 3 >= len))
-			ft_process_dict_data(num, len, i + 1);
-		ft_print_two(arr, --count, 1);
-	}
-	else if ((i - 1) * 3 + 1 <= len)
-	{
-		printf("%s\n", "testt");
-		arr[0] = num[0];
-		m = 1;
-		arr[m] = '\0';
-		count++;
-		if (!(i * 3 >= len))
-			ft_process_dict_data(num, len, i + 1);
-		ft_print_one(arr, --count, 1);
-	}
-	
+    if (i * 3 <= len) {
+        ft_process_three(num, len, i, &count);
+    } else if ((i - 1) * 3 + 2 <= len) {
+        ft_process_two(num, len, i, &count);
+    } else if ((i - 1) * 3 + 1 <= len) {
+        ft_process_one(num, len, i, &count);
+    }
 }
 
-// FIXEME: need modified this code, need find current max length of rows and make arr by that responcive one
-/*
-	// Need something like this for checking max length of current string when we spliting them by \n
-	while (str[i] != '\0')
-	{
-		if in curr row i dont get \0 or \n
-	}
-
-*/
 char	**ft_split_content(char *str, int total_bytes)
 {
 	int		i;

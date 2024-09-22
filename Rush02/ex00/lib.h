@@ -17,5 +17,8 @@ void    ft_print_two(char *str, int count, int is_fist);
 void    ft_print_one(char *str, int count, int is_first);
 void    ft_get_word(int index);
 void	ft_get_tail(int div);
+void    ft_process_three(char *num, int len, int i, int *count);
+void ft_process_two(char *num, int len, int i, int *count);
+void ft_process_one(char *num, int len, int i, int *count);
 
 #endif
