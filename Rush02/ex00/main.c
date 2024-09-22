@@ -1,7 +1,9 @@
 #include "lib.h"
 
-int	main(int argc, char **argv) {
-	if (argc < 2 || argc > 3) {
+int	main(int argc, char **argv)
+{
+	if (argc < 2 || argc > 3)
+	{
 		ft_putstr("Error\n");
 		return (1);
 	}
@@ -12,7 +14,9 @@ int	main(int argc, char **argv) {
 			ft_putstr("Error\n");
 			return (1);
 		}
-	} else if (argc == 3) {
+	}
+	else if (argc == 3)
+	{
 		if (ft_core(argv[1], argv[2]))
 		{
 			ft_putstr("Error\n");
