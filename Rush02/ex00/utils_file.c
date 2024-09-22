@@ -57,13 +57,16 @@ char	*ft_content(char *content, char *buffer, int r_b, int *t_b)
 	{
 		new = (char *)malloc(*t_b + 2);
 		if (!new)
+		{
+			free(content);
 			return (NULL);
+		}
 		j = -1;
 		while (++j < *t_b)
 			new[j] = content[j];
 		new[*t_b] = buffer[i];
 		new[*t_b + 1] = '\0';
-		free(content);
+		free(	);
 		content = new;
 		(*t_b)++;
 		i++;
