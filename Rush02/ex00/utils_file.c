@@ -58,7 +58,7 @@ char	*ft_content(char *content, char *buffer, int r_b, int *t_b)
 		new = (char *)malloc(*t_b + 2);
 		if (!new)
 		{
-			free(content);
+			free(new);
 			return (NULL);
 		}
 		j = -1;
