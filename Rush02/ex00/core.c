@@ -1,4 +1,5 @@
 #include "lib.h"
+#include "utils.h"
 
 int	ft_core(char *str, char *dict)
 {

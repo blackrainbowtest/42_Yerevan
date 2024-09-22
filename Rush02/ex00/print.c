@@ -1,4 +1,5 @@
 #include "lib.h"
+#include "utils.h"
 
 void ft_print_three(char *str, int count, int is_first)
 {

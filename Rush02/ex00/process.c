@@ -1,4 +1,5 @@
 #include "lib.h"
+#include "utils.h"
 
 void	ft_process_three(char *num, int len, int i, int *count)
 {
