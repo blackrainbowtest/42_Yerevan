@@ -10,7 +10,7 @@ int	ft_core(char *str, char *dict)
 	content = ft_read_file_data(dict, &total_bytes);
 	if (!content)
 		return (1);
-	dict_data = ft_split_content(content, total_bytes);
+	dict_data = ft_split_content(content);
 	static_save(dict_data);
 	free(content);
 	if (!dict_data)

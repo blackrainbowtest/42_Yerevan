@@ -3,8 +3,7 @@ SRC = main.c utils.c core.c utils_file.c print.c process.c split.c helper.c
 OBJ = $(SRC:.c=.o)
 
 CC = gcc
-CFLAGS = 
-# -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 

@@ -46,7 +46,7 @@ void	ft_fill_strs(char *str, char **strs)
 	}
 }
 
-char	**ft_split_content(char *str, int total_bytes)
+char	**ft_split_content(char *str)
 {
 	char	**strs;
 

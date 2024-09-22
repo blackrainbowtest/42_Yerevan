@@ -8,7 +8,7 @@
 # include <fcntl.h>
 
 int		ft_core(char *str, char *dict);
-char	**ft_split_content(char *str, int total_bytes);
+char	**ft_split_content(char *str);
 void	ft_process_dict_data(char *num, int len, int i);
 char	**static_save(char **base);
 void	ft_print_three_helper(char *str, int count, int *is_first);
