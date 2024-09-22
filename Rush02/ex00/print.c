@@ -75,24 +75,17 @@ int	ft_get_tail(int div)
 {
 	int		count;
 	int		i;
-	int		j;
 	int		dig_count;
 	char	**buff;
 
 	count = 1 + (3 * div);
 	if (div == 0)
 		count = 3;
-	j = 0;
-	dig_count = 0;
 	i = 0;
 	buff = static_save(NULL);
 	while (buff[i])
 	{
-		while (buff[i][j] >= '0' && buff[i][j] <= '9')
-		{
-			dig_count++;
-			j++;
-		}
+		dig_count = ft_count_digits(buff[i]);
 		if (dig_count == count)
 		{
 			ft_get_word(i);

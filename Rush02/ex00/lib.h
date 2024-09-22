@@ -22,4 +22,5 @@ int		ft_get_tail(int div);
 void	ft_process_three(char *num, int len, int i, int *count);
 void	ft_process_two(char *num, int len, int i, int *count);
 void	ft_process_one(char *num, int len, int i, int *count);
+int		ft_count_digits(char *str);
 #endif

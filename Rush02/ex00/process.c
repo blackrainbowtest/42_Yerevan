@@ -62,3 +62,18 @@ void	ft_process_one(char *num, int len, int i, int *count)
 		ft_process_dict_data(num, len, i + 1);
 	ft_print_one(arr, --(*count), 1);
 }
+
+int	ft_count_digits(char *str)
+{
+	int		j;
+	int		dig_count;
+
+	j = 0;
+	dig_count = 0;
+	while (str[j] >= '0' && str[j] <= '9')
+	{
+		dig_count++;
+		j++;
+	}
+	return (dig_count);
+}
