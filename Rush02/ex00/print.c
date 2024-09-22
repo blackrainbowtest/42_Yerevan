@@ -3,18 +3,17 @@
 
 void ft_print_three(char *str, int count, int is_first)
 {
-    char    **dict_data;
+	char	**dict_data;
 	int		i;
 
-	// printf("\n%s I put 3 in 2\n", str);
 	i = 0;
-    dict_data = static_save(NULL);
-    if (str[0] == '0')
-    {
-        ft_print_two(++str, count, is_first);
+	dict_data = static_save(NULL);
+	if (str[0] == '0')
+	{
+		ft_print_two(++str, count, is_first);
 		is_first = 0;
-    }
-    else
+	}
+	else
 	{
 		while (dict_data[i])
 		{
@@ -26,7 +25,7 @@ void ft_print_three(char *str, int count, int is_first)
 			}
 			i++;
 		}
-        ft_print_two(++str, count, 0);
+		ft_print_two(++str, count, 0);
 	}
 	if (is_first && count > 0)
 		ft_get_tail(count);
@@ -34,17 +33,17 @@ void ft_print_three(char *str, int count, int is_first)
 
 void ft_print_two(char *str, int count, int is_first)
 {
-    char    **dict_data;
+	char	**dict_data;
 	int		i;
 
-    dict_data = static_save(NULL);
+	dict_data = static_save(NULL);
 	i = 0;
-    if (str[0] == '0')
+	if (str[0] == '0')
 	{
-        ft_print_one(++str, count, is_first);
+		ft_print_one(++str, count, is_first);
 		is_first = 0;
 	}
-    else
+	else
 	{
 		while (dict_data[i])
 		{
@@ -71,7 +70,7 @@ void ft_print_two(char *str, int count, int is_first)
 
 void ft_print_one(char *str, int count, int is_first)
 {
-    char    **dict_data;
+	char	**dict_data;
 	int		i;
 	dict_data = static_save(NULL);
 	i = 0;
@@ -93,21 +92,21 @@ void ft_print_one(char *str, int count, int is_first)
 
 void ft_get_word(int index)
 {
-    int     i;
-    int     is_word;
-    char    **buff;
+	int	 i;
+	int	 is_word;
+	char	**buff;
 
-    buff = static_save(NULL);
-    i = 0;
-    is_word = 0;
-    while (buff[index][i])
-    {
-        if (is_word) 
-            write(1, &buff[index][i], 1);
-        if (buff[index][i] == ':')
-            is_word = 1;
-        i++;
-    }
+	buff = static_save(NULL);
+	i = 0;
+	is_word = 0;
+	while (buff[index][i])
+	{
+		if (is_word) 
+			write(1, &buff[index][i], 1);
+		if (buff[index][i] == ':')
+			is_word = 1;
+		i++;
+	}
 }
 
 void	ft_get_tail(int div)
@@ -116,7 +115,7 @@ void	ft_get_tail(int div)
 	int		i;
 	int		j;
 	int		dig_count;
-	char    **buff;
+	char	**buff;
 
 	count = 1 + (3 * div);
 	if (div == 0)
