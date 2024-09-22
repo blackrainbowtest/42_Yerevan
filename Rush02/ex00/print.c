@@ -27,12 +27,15 @@ void	ft_print_two(char *str, int count, int is_first)
 		ft_get_tail(count);
 }
 
-void ft_print_one(char *str, int count, int is_first)
+void	ft_print_one(char *str, int count, int is_first)
 {
 	char	**dict_data;
 	int		i;
+	int		is_exit;
+
 	dict_data = static_save(NULL);
 	i = 0;
+	is_exit = 1;
 	if (str[0] != '0')
 	{
 		while (dict_data[i])

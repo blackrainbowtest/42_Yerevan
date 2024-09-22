@@ -17,7 +17,7 @@ void	ft_print_three_helper(char *str, int count, int *is_first)
 	}
 	else
 	{
-		while (dict_data[++i] && is_exit != 1)
+		while (dict_data[++i] && is_exit == 1)
 		{
 			if (dict_data[i][0] == str[0] && dict_data[i][1] == ':')
 			{
@@ -39,7 +39,7 @@ void	ft_process_teen_digits(char *str)
 	dict_data = static_save(NULL);
 	i = 0;
 	is_exit = 1;
-	while (dict_data[i] && is_exit != 1)
+	while (dict_data[i] && is_exit == 1)
 	{
 		if (dict_data[i][0] == str[0] && dict_data[i][1] == str[1])
 		{
@@ -59,7 +59,7 @@ void	ft_process_tens_digits(char *str, int count)
 	dict_data = static_save(NULL);
 	i = 0;
 	is_exit = 1;
-	while (dict_data[i] && is_exit != 1)
+	while (dict_data[i] && is_exit == 1)
 	{
 		if (dict_data[i][0] == str[0] && dict_data[i][1] == '0')
 		{
