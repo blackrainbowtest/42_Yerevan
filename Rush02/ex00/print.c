@@ -10,7 +10,6 @@ void	ft_print_three(char *str, int count, int is_first)
 
 void	ft_print_two(char *str, int count, int is_first)
 {
-	printf("\n%s - %d - %d\n", "lalal", count, is_first);
 	if (str[0] == '0')
 	{
 		ft_print_one(++str, count, is_first);
