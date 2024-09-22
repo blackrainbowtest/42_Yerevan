@@ -66,7 +66,7 @@ char	*ft_content(char *content, char *buffer, int r_b, int *t_b)
 			new[j] = content[j];
 		new[*t_b] = buffer[i];
 		new[*t_b + 1] = '\0';
-		free(	);
+		free(content);
 		content = new;
 		(*t_b)++;
 		i++;
