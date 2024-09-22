@@ -53,7 +53,7 @@ void ft_print_two(char *str, int count, int is_first)
 					ft_get_word(i);
 					break;
 				}
-			else if (dict_data[i][0] == str[0] && dict_data[i][1] == '0')
+			if (str[0] >= '2' && str[0] <= '9' && dict_data[i][0] == str[0] && dict_data[i][1] == '0')
 			{
 				ft_get_word(i);
 				if (str[1] != '0')
