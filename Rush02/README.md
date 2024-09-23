@@ -10,7 +10,7 @@ Please do not copy code from this repository without understanding how it works.
 Study, analyze, and learn from your own mistakes.
 </div>
 
-## [Полное описание проекта тут](https://github.com/blackrainbowtest/42_Yerevan/blob/main/Rush02/README_FULL_INFO.md)
+## [>>> Полное описание проекта тут <<<](https://github.com/blackrainbowtest/42_Yerevan/blob/main/Rush02/README_FULL_INFO.md)
 
 
 ## Содержание
