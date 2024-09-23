@@ -9,8 +9,9 @@ Please do not copy code from this repository without understanding how it works.
 
 Study, analyze, and learn from your own mistakes.
 
-как взаимодействуют файлы и функции
+<h1>как взаимодействуют файлы и функции</h1>
 </div>
+
 ## Первым конечно запускается файл main.c
 
 в нем обрабатывается проверка соответствия с условиями задачи.
