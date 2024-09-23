@@ -8,8 +8,6 @@ Please do not copy code from this repository without understanding how it works.
 ☠️ Copying without comprehension is not the way to gain knowledge.
 
 Study, analyze, and learn from your own mistakes.
-
-<h1>как взаимодействуют файлы и функции</h1>
 </div>
 
 ## Содержание
