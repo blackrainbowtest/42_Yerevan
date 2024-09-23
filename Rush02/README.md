@@ -1,5 +1,16 @@
-как взаимодействуют файлы и функции
+<div align="center">
+❗❗ WARNING ❗❗
 
+Please do not copy code from this repository without understanding how it works. Simply copying code will not help you learn or understand the material.
+
+⚠️ Understanding and practice are crucial for your learning.
+
+☠️ Copying without comprehension is not the way to gain knowledge.
+
+Study, analyze, and learn from your own mistakes.
+
+как взаимодействуют файлы и функции
+</div>
 ## Первым конечно запускается файл main.c
 
 в нем обрабатывается проверка соответствия с условиями задачи.
