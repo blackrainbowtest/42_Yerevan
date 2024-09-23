@@ -9,7 +9,7 @@
 	</tr>
 	<tr>
 		<th>Turn-in directory :</th>
-		<td>ex03/</td>
+		<td>ex04/</td>
 	</tr>
 	<tr>
 		<th>Files to turn in :</th>
@@ -32,7 +32,7 @@ base base_from to a base base_to.</p>
 </p>
 
 ```C
-char *ft_strjoin(int size, char **strs, char *sep);
+char	*ft_convert_base(char *nbr, char *base_from, char *base_to);
 ```
 
 </div>
