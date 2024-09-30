@@ -188,7 +188,7 @@ Study, analyze, and learn from your own mistakes.
   </tr>
   <tr>
     <th>C08</th>
-    <td>-</td>
+    <td><a href="https://github.com/blackrainbowtest/42_Yerevan/tree/main/C08/ex00/"><img src="https://img.shields.io/badge/status-OK-brightgreen" alt="OK" /></a></td>
     <td>-</td>
     <td>-</td>
     <td>-</td>
